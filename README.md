@@ -36,7 +36,7 @@ $ npm run run-all  # Run all js files
 ```
 ![npm run run-all images](DocumentsImages/npm-run-all.png)
 
-# Change Scripts Montior
+# Montior Script Changes
 ```
 $ npm run watch-changed # Watch ./out/*.js and if changed codes, run *.js automatically
 ```
