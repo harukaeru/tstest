@@ -1,0 +1,21 @@
+{
+  "name": "tstest",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "out": "webpack --progress --colors --watch",
+    "watch-changed": "when-changed ./out/*.js -c 'echo \"\\033[33;31m--- Start ---\\033[33;0m\"; node %f'"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "ts-loader": "^0.8.0",
+    "typings": "^0.7.12"
+  }
+}
