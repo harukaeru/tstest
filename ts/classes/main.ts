@@ -4,10 +4,10 @@ class Greeter {
         this.greeting = message;
     }
 
-    greet() {
-        return "Hello, " + this.greeting;
+    greet(): void {
+        console.log("Hello, " + this.greeting);
     }
 }
 
 let greeter = new Greeter("world");
-console.log(greeter.greet());
+greeter.greet();
