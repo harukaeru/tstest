@@ -18,4 +18,6 @@ $ npm run run-all  # Run all js files
 ```
 
 # Change Scripts Montior
+```
 $ npm run watch-changed # Watch ./out/*.js and if changed codes, run *.js automatically
+```
