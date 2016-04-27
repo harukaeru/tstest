@@ -1,8 +1,10 @@
 'use strict';
+var entries = {
+    'main': './ts/main.ts',
+    'read_module': './ts/read_module/main.ts'
+}
 module.exports = {
-    entry: {
-        'main': './ts/main.ts'
-    },
+    entry: entries,
     output: {
         path: './out',
         filename: "[name].bundle.js",
