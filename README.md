@@ -34,6 +34,7 @@ $ pip install -r requirements.txt  # Install "when-changed"
 $ npm run out  # Watch *.ts or *.tsx files and if changed codes, compile to *.js files automatically (See package.json and webpack.config.js)
 $ npm run run-all  # Run all js files
 ```
+![npm run run-all images](DocumentsImages/npm-run-all.png)
 
 # Change Scripts Montior
 ```
