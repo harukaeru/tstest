@@ -6,7 +6,7 @@ $ npm install -g typescript  # Install "Typescript" globally
 $ npm install .  # Install "ts-loader" locally(in package.json)
 ```
 
-## Install File Monitor Tool Written In Python (Recommend)
+## Install File Monitor Tool Written In Python (Required. But if you don't want to use Python, use alternatives)
 ```sh
 $ pip install -r requirements.txt  # Install "when-changed"
 ```
