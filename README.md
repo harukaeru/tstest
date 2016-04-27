@@ -1,10 +1,12 @@
-# Must Read me
+# Must Read Me
 ## Required Environment
 - Python 2.6 or later
 - Node
 
 ## Target Users
 - Mac OS X
+
+However I assume this works on Linux well.
 
 ## Others
 I don't try on other machines. So if it doesn't work in your environment, please raise `Issues`.
