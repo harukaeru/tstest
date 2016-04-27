@@ -5,7 +5,7 @@
   "scripts": {
     "out": "webpack --progress --colors --watch",
     "watch-changed": "when-changed ./out/*.js -c 'echo \"\\033[33;31m--- Start %f ---\\033[33;0m\"; node %f'",
-    "run-all": "sh run_all_js.sh"
+    "run-all": "sh scripts/run_all_js.sh"
   },
   "repository": {
     "type": "git",
