@@ -1,2 +1,5 @@
 npm-debug.log
 out/*
+*.class
+*.java
+ts/main.ts
