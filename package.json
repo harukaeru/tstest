@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "out": "webpack --colors --watch",
-    "watch-changed": "when-changed ./out/*.js -c 'echo \"\\033[33;31m--- Start %f ---\\033[33;0m\"; node %f'",
+    "watch-changed": "when-changed ./out/ -c 'sh scripts/run-file.sh %f'",
     "run-all": "sh scripts/run_all_js.sh"
   },
   "repository": {
