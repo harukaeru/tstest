@@ -14,6 +14,7 @@ class Snake extends Animal {
     }
 }
 
+// Can't `new Snake(theName='p')`;
 let snake = new Snake('[🐍 ]');
 
 snake.move(10);
