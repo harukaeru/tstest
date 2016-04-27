@@ -1,8 +1,33 @@
 'use strict';
-var entries = {
-    'main': './ts/main.ts',
-    'read_module': './ts/read_module/main.ts'
-}
+
+var fs = require('fs'),
+    path = require('path');
+
+var entries = {}
+var read = function(cur) {
+    var files = fs.readdirSync(cur);
+    files.map(function(file_or_dir) {
+        return path.join(cur, file_or_dir);
+    }).forEach(function(file_or_dir) {
+        if (fs.statSync(file_or_dir).isFile()) {
+            if (file_or_dir.endsWith('main.ts') || file_or_dir.endsWith('main.tsx')) {
+                var filePath = file_or_dir;
+                var dir = filePath.split('/');
+                var name = dir[dir.length - 2];
+
+                entries[name] = './' + filePath;
+            }
+        } else {
+            read(file_or_dir);
+        }
+    });
+};
+
+read('ts');
+console.log("\x1b[36m--- Entries ---\x1b[0m");
+console.log(entries);
+console.log("\x1b[36m---------------\x1b[0m");
+
 module.exports = {
     entry: entries,
     output: {
