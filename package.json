@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "out": "webpack --colors --watch",
-    "watch-changed": "when-changed ./out/ -c 'sh scripts/run-file.sh %f'",
+    "watch-ts": "webpack --colors --watch",
+    "watch-js": "when-changed ./out/ -c 'sh scripts/run-file.sh %f'",
     "run-all": "sh scripts/run_all_js.sh"
   },
   "repository": {
